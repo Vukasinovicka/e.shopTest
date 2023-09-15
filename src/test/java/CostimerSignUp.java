@@ -47,7 +47,7 @@ public class CostimerSignUp {
         driver.findElement(By.cssSelector(createAnAccountButton)).click();
         driver.findElement(By.cssSelector(errorMessage)).isDisplayed();
     }
-
+    //02 TC - Verify that user can not create account if he submit empty First Name
     @Test
     public void Test02() throws Exception {
         driver.findElement(By.id(lastNameField)).sendKeys(lastName);

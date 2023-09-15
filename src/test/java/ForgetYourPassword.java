@@ -10,7 +10,7 @@ public class ForgetYourPassword {
      public static final WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver,10);
 
-    String envUrl = "https://magento.softwaretestingboard.com/customer/account/forgotpassword/";
+    String envUrl = "https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/";
 
     String emailField ="email_address";
 
@@ -21,14 +21,17 @@ public class ForgetYourPassword {
     public void Test01() {
         driver.get(envUrl);
         driver.manage().window().maximize();
+        driver.findElement(By.linkText("Forgot Your Password?")).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(resetMyPasswordButton)));
         driver.findElement(By.cssSelector(resetMyPasswordButton)).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email_address-error")));
         driver.findElement(By.id("email_address-error")).isDisplayed();
     }
     @Test
     public void Test02() {
         driver.get(envUrl);
         driver.manage().window().maximize();
+        driver.findElement(By.linkText("Forgot Your Password?")).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(resetMyPasswordButton)));
         driver.findElement(By.id(emailField)).sendKeys("v.ana.95@hotmail.com");
         driver.findElement(By.cssSelector(resetMyPasswordButton)).click();
