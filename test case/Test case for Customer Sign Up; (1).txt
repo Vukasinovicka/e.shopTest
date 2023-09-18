@@ -1,0 +1,79 @@
+﻿Test case for Customer Sign Up;
+
+
+01.TC - Verify that Create an Account button leads to the register page.
+     01.I will click create an account button
+     Verify that user after he click on Create an Account button in this case he will see register page
+
+
+02.TC - Verify that user can see proper design.
+      01.I will click create an account button
+      Verify that user must see proper design that we can find in AC.
+
+
+03.TC - Verify that user can not create an account if he submit empty mandatory fields.
+      01.I will click create an account button.
+      02.I will leave all mandatory fields empty.
+      03.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message on all     
+      mandatory fields “ This is a required field. “
+
+
+04.TC - Verify that user can not create an account if he submit empty First Name field.
+      01.I will click create an account button.
+      02.I will leave an empty first name field.
+      03.I will enter other mandatory fields.
+      04.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      First name field “ This is a required field. “
+
+
+05.TC - Verify that user can not create an account if he submit empty Last Name field.
+      01.I will click create an account button.
+      02.I will leave an empty last name field.
+      03.I will enter other mandatory fields.
+      04.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      Last name field “ This is a required field. “
+
+
+06.TC - Verify that user can not create an account if he submit empty Email field.
+      01.I will click create an account button.
+      02.I will leave an empty email field.
+      03.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      Email field “ This is a required field. “
+
+
+07.TC - Verify that user can not create an account if he submit empty Password field.
+      01.I will click create an account button.
+      02.I will leave an empty password field.
+      03.I will enter other mandatory fields.
+      04.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      Password field “ This is a required field. “
+
+
+08.TC - Verify that user can not create an account if he submit empty Confirm Password field.
+      01.I will click create an account button.
+      02.I will leave an empty confirm password field.
+      03.I will enter other mandatory fields.
+      04.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      Confirm password field “ This is a required field. “
+
+
+09.TC - Verify that user can not create an account if he submit wrong Confirm Password..
+      01.I will click create an account button.
+      02.I will enter the wrong confirm password .
+      03.I will enter other mandatory fields.
+      04.I will click create an account button.
+      Verify that user can not create an account and he will see proper error message under     
+      Confirm password field “ Plesa enter the same value again.”
+
+
+10.TC - Verify that user can create an account.
+      01.I will click create an account button
+      02.I will enter all mandatory fields.
+      03.I will click create an account button.
+      Verify that user can create an account

@@ -1,0 +1,111 @@
+﻿Test case for Shopping
+
+
+01.TC - Verify that user can add product to shopping cart 
+       01.I will open login page
+       02.I will enter valid email
+       03.I will enter valid password
+       04.I will click Sign In button
+       05.I will click what’s is new 
+       06.I will click bras & tanks
+       07.I will click product
+       08.I will choose the size
+       09.I will choose the color
+       10.I will click add to cart button
+       Verify that user can add a product and he will see a proper message on display. 
+
+
+02.TC - Verify that user can edit selected product from shopping cart
+       01.I will open login page
+       02.I will enter valid email
+       03.I will enter valid password
+       04.I will click Sign In button
+       05.I will open shopping cart page
+       06.I will click edit button
+       07.I will enter number on qty field
+       08.I will click update card button
+       Verify that user can edit the product and he will see a proper message on display.
+
+
+03.TC - Verify that user can not buy a product if he doesn't choose a color.
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will choose  men section 
+        06.I will click tops
+        07.I will click the product
+        08.I will choose the size
+        09.I will don’t choose a color
+        10.I will click add the cart button
+        Verify that user can not add product and he will see proper message under color field
+        “This is a required field.”  
+
+
+04.TC - Verify that user can add the product to the My Wish List even if he doesn’t choose a color.
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will choose  men section 
+        06.I will click tops
+        07.I will click the product
+        08.I will choose the size
+        09.I will don’t choose a color
+        10.I will click my wish list
+        Verify that user can see proper message and he will see proper message on display 
+
+
+05.TC - Verify that user can not add from the my wish list to the shopping cart if he did not choose a color.
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will open my wish list page
+        06.I will click Add All to Cart button
+        Verify that user can not add and he will see proper message on display 
+
+
+06.TC - Verify that user can add new products in Shopping Cart.
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will open shopping cart page
+        06.I will click a new product 
+        Verify that user can add new product and he will see proper message on display
+
+
+07.TC - Verify that user can delete selected product from Shopping Cart
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will open shopping cart page
+        06.I will choose product
+        07.I will click delete 
+        Verify that user can delete product and he will see proper message
+
+
+ 08.TC - Verify that user can not get a discount if he submitted the wrong code.
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will open shopping cart page
+        06.I will click Apply Discount Code
+        07.I will enter wrong code
+        08.I will click Apply Discount button
+        Verify that user can not use the code and he will proper message on display 
+
+
+09.TC - Verify that user to be able to change the delivery address
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will open shopping cart page
+        06.I will click Chece out with multiple address link
+        07.I will select new address
+        08.I will click update qty & address button
+        Verify that user can change address

@@ -1,0 +1,70 @@
+﻿Test case for Custimer Sign In
+
+
+01.TC - Verify that user can see proper design
+      01.I will open login page
+      Verify that user must see proper design that we can find in AC.
+
+
+02.TC - Verify that user can not login if he submit empty mandatory fields.
+      01.I will open the login page.
+      02.I will leave empty mandatory fields.
+      03.I will click the Sign In button. 
+      Verify that user can not login and he will see proper error message in all mandatory
+      fields “ This is a required field.”
+
+
+03.TC - Verify that user can not login if he submit empty Email fields.
+      01.I will open the login page.
+      02.I will leave empty Email
+      03.I will enter valid password
+      04.I will click the Sign In button
+      Verify that user can not login and he will see proper message under Email field
+      “This is a required field. “
+
+
+04.TC - Verify that user can not login if he submit empty Password fields.
+      01.I will open the login page.
+      02.I will enter a valid email.
+      03.I will enter valid password
+      04.I will click the Sign In button
+      Verify that user can not login and he will see proper message under Password field
+      “This is a required field. “
+
+
+05.TC - Verify that user can not login if he submit wrong Email and valid Password.
+      01.I will open the login page.
+      02.I will enter the wrong email.
+      03.I will enter valid password
+      04.I will click the Sign In button
+      Verify that user can not login and he will see proper message in display
+      “The account sign-in was incorrect or your account is disabled temporarily. Please
+       wait and try again later.”
+
+
+06.TC - Verify that user can not login if he submit wrong Password and valid Email.
+      01.I will open the login page.
+      02.I will enter a valid email.
+      03.I will enter wrong password
+      04.I will click the Sign In button
+      Verify that user can not login and he will see proper message in display
+      “The account sign-in was incorrect or your account is disabled temporarily. Please
+       wait and try again later.”
+
+
+07.TC - Verify that user can not login if he submit wrong Email and Password.
+      01.I will open the login page.
+      02.I will enter the wrong email.
+      03.I will enter wrong password
+      04.I will click the Sign In button
+      Verify that user can not login and he will see proper message in display
+      “The account sign-in was incorrect or your account is disabled temporarily. Please
+       wait and try again later.”
+
+
+08.TC - Verify that user can login
+       01.I will click Sign In button
+       02.I will enter valid email
+       03.I will enter valid password
+       04.I will click the Sign In button
+       Verify that user can login

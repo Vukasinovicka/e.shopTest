@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -40,7 +41,8 @@ public class Shopping {
         driver.findElement(By.id("product-addtocart-button")).click();
         driver.findElement(By.cssSelector("span.counter-label")).isDisplayed();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.message-success.success.message")));
-        driver.findElement(By.cssSelector("div.message-success.success.message")).isDisplayed();
+        WebElement message = driver.findElement(By.cssSelector("div.message-success.success.message"));
+        Assert.assertTrue(message.isDisplayed());
         driver.findElement(By.linkText("shopping cart")).click();
     }
     //02.TC - Verify that user can edit selected product from shopping cart
@@ -56,7 +58,7 @@ public class Shopping {
         driver.findElement(By.id("qty")).sendKeys("2");
         driver.findElement(By.id("product-updatecart-button")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.message-success.success.message")));
-        driver.findElement(By.cssSelector("div.message-success.success.message"));
+        driver.findElement(By.cssSelector("div.message-success.success.message")).isDisplayed();
 
     }
     // TC - Verify that user can not buy product if he doesn't choose a color
@@ -128,6 +130,19 @@ public class Shopping {
         driver.findElement(By.cssSelector("button.action.apply.primary")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.message-error.error.message")));
         driver.findElement(By.cssSelector("div.message-error.error.message")).isDisplayed();
+    }
+    @Test
+    public void Test09() {
+        driver.get("https://magento.softwaretestingboard.com/checkout/cart/");
+        driver.findElement(By.cssSelector("button.action.primary.checkout")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.button.action.continue.primary")));
+        driver.findElement(By.cssSelector("button.button.action.continue.primary")).click();
+
+    }
+    @Test
+    public void Test10() {
+        driver.findElement(By.cssSelector("button.action.switch")).click();
+        driver.findElement(By.cssSelector("li.authorization-link")).click();
     }
 }
 

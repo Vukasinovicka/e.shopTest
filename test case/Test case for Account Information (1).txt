@@ -1,0 +1,31 @@
+﻿Test case for Account Information 
+
+
+
+
+01.TC -Verify that user can change password in Account Information page
+      01.I will open login page
+      02.I will enter valid email
+      03.I will enter valid password
+      04.I will click Sign In button
+      05.I will click Account Information
+      06.I will select Change Password
+      07.I will enter current password
+      08.I will enter new password
+      09.I will enter confirm new password
+      10.I click save button
+      Verify that user can edit password and he will see proper message
+
+
+02.TC - Verify that user can not change email if he submit wrong password
+        01.I will open login page
+        02.I will enter valid email
+        03.I will enter valid password
+        04.I will click Sign In button
+        05.I will click Account Information
+        06.I will select change email
+        07.I will enter new email
+        08.I will enter wrong password
+        09.I will click save button
+        Verify that user can not change email and he will see proper message 
+        “The password doesn’t match this account. Verify the password and try again.”

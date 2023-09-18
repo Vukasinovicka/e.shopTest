@@ -1,0 +1,45 @@
+﻿Test case for Address Book
+
+
+
+
+01.TC - Verify that user can add new Address Book
+   01.I will open login page
+   02.I will enter valid email
+   03.I will enter valid password
+   04.I will click Sign In button
+   05.I will click Address book link
+   06.I will click Add New Address button
+   07.I will enter Phone Number
+   08.I will enter Street Address
+   09.I will enter City
+   10.I will select State
+   11.I will enter Postal code
+   12.I will select Country
+   13.I will click Save Address button
+   Verify that user can add new address
+
+
+02.TC- Verify that user can edit Address Book
+   01.I will open login page
+   02.I will enter valid email
+   03.I will enter valid password
+   04.I will click Sign In button
+   05.I will click Address book link
+   06.I will click edit
+   07.I will add new Street Address
+   08.I will click Save Address
+   Verify that user can edit  address and he will see proper message 
+   “You saved the address”
+
+
+03.TC - Verify that user can delete address
+   01.I will open login page
+   02.I will enter valid email
+   03.I will enter valid password
+   04.I will click Sign In button
+   05.I will click Address book link
+   06.I will click delete
+   07.I will click ok
+   Verify that user can delete Address and he will see proper message in display
+   “You deleted the address.
