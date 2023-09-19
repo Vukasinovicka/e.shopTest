@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Shopping {
 
-    public static final WebDriver driver = new ChromeDriver();
+    WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver,30);
 
 
@@ -26,6 +26,11 @@ public class Shopping {
         driver.findElement(By.id("pass")).sendKeys("Vuk@1504");
         driver.findElement(By.id("send2")).click();
     }
+
+
+
+
+
     //01.TC - Verify that user can add product to shopping cart
     @Test
     public void Test01() {
